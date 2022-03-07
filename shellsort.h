@@ -8,7 +8,8 @@
 typedef enum {
 	g_two = 2,
 	g_three = 3,
-	g_five = 5
+	g_five = 5,
+	g_seven = 7
 } gap_scale;
 
 #if defined _WIN64 && defined _WINDLL

@@ -25,7 +25,7 @@ void shell_sort(int* data, UINT32 n, gap_scale s, clock_t* e) {
 	UINT32 bd = THREAD_COUNT;
 	UINT32 gd = (n + THREAD_DUMMY) / THREAD_COUNT;
 	clock_t sg = clock();
-	for (UINT32 g = n / s; g > 1; g /= s) gap_shell_sort <<< gd, bd >>> (data, n, g); // C4267
+	for (UINT32 g = n / s; g > 1; g /= s) gap_shell_sort <<< gd, bd >>> (data, n, g);
 	clock_t fg = clock();
 	cudaDeviceSynchronize();
 	int t;
