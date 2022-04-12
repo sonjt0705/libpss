@@ -1,3 +1,5 @@
 vs2022/.vs
+msi/[Dd]ebug
+msi/[Rr]elease
 objx64
 x64

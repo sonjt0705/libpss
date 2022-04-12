@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libpss", "libpss.vcxproj", "{68EBD3FB-8421-4980-85D0-589A9C917174}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "msi", "..\msi\msi.vdproj", "{50826B6D-35FD-4AE9-A814-22139AC801A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -15,6 +17,8 @@ Global
 		{68EBD3FB-8421-4980-85D0-589A9C917174}.Debug|x64.Build.0 = Debug|x64
 		{68EBD3FB-8421-4980-85D0-589A9C917174}.Release|x64.ActiveCfg = Release|x64
 		{68EBD3FB-8421-4980-85D0-589A9C917174}.Release|x64.Build.0 = Release|x64
+		{50826B6D-35FD-4AE9-A814-22139AC801A7}.Debug|x64.ActiveCfg = Debug
+		{50826B6D-35FD-4AE9-A814-22139AC801A7}.Release|x64.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
