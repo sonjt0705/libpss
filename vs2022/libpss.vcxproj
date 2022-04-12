@@ -42,7 +42,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IntDir>obj$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>..\obj$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)..\$(Platform)\$(Configuration)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IntDir>obj$(Platform)\$(Configuration)\</IntDir>
@@ -61,6 +62,7 @@
     <CudaCompile>
       <TargetMachinePlatform>64</TargetMachinePlatform>
     </CudaCompile>
+    <BuildLog />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -82,13 +84,20 @@
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CudaCompile Include="shellsort.cu" />
+    <CudaCompile Include="..\shellsort.cu" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dllmain.c" />
+    <ClCompile Include="..\dllmain.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="shellsort.h" />
+    <ClInclude Include="..\shellsort.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\LICENSE.txt" />
+    <Text Include="..\README.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
